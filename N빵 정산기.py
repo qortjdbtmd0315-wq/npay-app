@@ -10,14 +10,14 @@ if 'authenticated' not in st.session_state:
     st.session_state['authenticated'] = False
 
 if not st.session_state['authenticated']:
-    st.title("🔐 모임 정산기 접속")
+    st.title("🔐 무해한 정산기 두과자")
     st.write("우리 멤버들만 이용 가능한 페이지입니다.")
 
     # 비밀번호 입력 (원하는 번호로 수정 가능)
     input_password = st.text_input("비밀번호를 입력하세요", type="password")
 
     if st.button("접속하기"):
-        if input_password == "0204":  # <--- 여기서 비밀번호를 변경하세요!
+        if input_password == "250411":  # <--- 여기서 비밀번호를 변경하세요!
             st.session_state['authenticated'] = True
             st.rerun()
         else:
@@ -168,4 +168,5 @@ if st.session_state.total_records:
 if st.button("🔄 모든 데이터 초기화"):
     st.session_state.total_records = []
     st.session_state.temp_extras = []
+
     st.rerun()
