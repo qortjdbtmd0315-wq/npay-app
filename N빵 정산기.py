@@ -27,8 +27,9 @@ if not st.session_state['authenticated']:
 # --- 1. 고정 멤버 및 데이터 초기화 ---
 if 'all_members' not in st.session_state:
     st.session_state.all_members = [
-        "배경헌", "강민경", "박솔리", "백승훈", "김정근","장온","정지우","정원배","홍순호",
-        "김준희", "정원택", "정원배", "나광연", "박민규","금민찬","김석환","홍재경"
+        "배경헌", "강민경", "박솔리", "백승훈", "김민규","권세진","강지은","김준희","김용민","김석환","김강민",
+        "정원배", "정원택", "나광연","정지우","김인선","정혜선","김윤식","홍순호","이주환","홍재경","최윤아","심우현",
+        "정현명","이종섭","김정근","김상민","권혁수","정현일","김덕주","장온","현조아","금민찬","김지혜","배재현"
     ]
 if 'total_records' not in st.session_state:
     st.session_state.total_records = []
@@ -170,6 +171,7 @@ if st.button("🔄 모든 데이터 초기화"):
     st.session_state.temp_extras = []
 
     st.rerun()
+
 
 
 
