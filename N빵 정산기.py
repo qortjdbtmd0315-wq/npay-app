@@ -17,7 +17,7 @@ if not st.session_state['authenticated']:
     input_password = st.text_input("비밀번호를 입력하세요", type="password")
 
     if st.button("접속하기"):
-        if input_password == "250411":  # <--- 여기서 비밀번호를 변경하세요!
+        if input_password == "8900":  # <--- 여기서 비밀번호를 변경하세요!
             st.session_state['authenticated'] = True
             st.rerun()
         else:
@@ -170,3 +170,4 @@ if st.button("🔄 모든 데이터 초기화"):
     st.session_state.temp_extras = []
 
     st.rerun()
+
